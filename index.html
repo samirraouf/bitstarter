@@ -17,7 +17,7 @@
     <style type="text/css">
 
     /* Large Desktop */
-    @media(min-width: 960px){
+    @media(min-width: 980px){
       body {
         padding-top: 60px;
       }
@@ -51,13 +51,9 @@
       font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     }
     .heading .subheading {
-      font-family: 'Ubuntu', helvetica, Arial, sans-serif;
+      font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
       text-align: center;
     }
-
-/*.container {
-        width: 960px;
-      }*/
 
       p.lead {
         padding-top: 1.5%;
@@ -66,7 +62,7 @@
       }
      
       p {
-        font-line: 18px;
+        font-size: 18px;
         line-height: 24px;
       }
 
@@ -92,7 +88,7 @@
       .video, .thermometer, .order, .social, .statistics {
         text-align: center;
       }
-      .statistics h3, statistics p {
+      .statistics h3, .statistics p {
         color: white;
       }
       
@@ -242,27 +238,28 @@
       <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
       <!-- This brings in jquery.js and bootstrap.js as dependancies. -->
       <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
-      <div class="span10 offset1">
-        <h3>FAQ</h3>
-        <div class"accordion" id="accordion2">
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse"    
-                 data-parent="#accordion2" href="collapseOne">
-                What does FAQ stand for? 
-              </a>
-            </div>
-            <div id="collapseOne" class="accordion-body collapse">
-              <div class="accordion-inner">
-                Frequently Asked Questions.
+      <div class="row-fluid faq">
+        <div class="span10 offset1">
+          <h3>FAQ</h3>
+          <div class"accordion" id="accordion2">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse"    
+                 data-parent="#accordion2" href="#collapseOne">
+                  What does FAQ stand for? 
+                </a>
+              </div>
+              <div id="collapseOne" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  Frequently Asked Questions.
+                </div>
               </div>
             </div>
-          </div>
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse"    
-                 data-parent="#accordion2" href="collapseTwo">
-                What is Frequently Asked Questions? 
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse"    
+                   data-parent="#accordion2" href="#collapseTwo">
+                  What is Frequently Asked Questions? 
               </a>
             </div>
             <div id="collapseTwo" class="accordion-body collapse">
